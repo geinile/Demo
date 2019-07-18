@@ -87,5 +87,5 @@ if __name__ == '__main__':
         fobj.write(version + '\n')
 
     # 部署软件包
-    web_root = '/var/www/html/nsd1902'
+    web_root = '/var/www/html/links'
     deploy(app_fname, web_root)
