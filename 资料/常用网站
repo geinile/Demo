@@ -1,0 +1,61 @@
+1.查天气
+    实况天气: http://www.weather.com.cn/data/sk/城市代码.html
+    城市信息: http://www.weather.com.cn/data/cityinfo/城市代码.html
+    详细指数: http://www.weather.com.cn/data/zs/城市代码.html
+    如北京:
+        http://www.weather.com.cn/data/sk/101010100.html
+
+2.钉钉机器人
+    1. 创建钉钉群聊机器人:https://www.jianshu.com/p/a3c62eb71ae3
+    2. 搜索 “钉钉机器人 开放到台”找到网址:https://docs.open.alipay.com/
+    3. 在开放平台搜索自定义机器人,得到网址:https://open-doc.dingtalk.com/microapp/serverapi3/iydd5h
+
+3.zabbix编程
+    手册页:https://www.zabbix.com/documentation/3.4/zh/manual
+    api:application programming interface应用程序编程接口
+    api地址:zabbix首页地址如果是http://x.x.x.x/zabbix
+        那么api地址就是http://x.x.x.x/zabbix/api_jsonrpc.php
+
+4.下载资料相关:https://down.51cto.com
+    如<<pro git>> : https://down.51cto.com/data/273438
+    如<<正则表达式必知必会>>:https://down.51cto.com/data/339092
+ 
+5.ansible编程
+    ansible官方手册:https://docs.ansible.com
+    找到ansible2.7的手册页:https://docs.ansible.com/ansible/2.7/index.html
+    搜索python api,找到:https://docs.ansible.com/ansible/2.7/dev_guide/developing_api.html?highlight=python%20api
+
+6.Python软件包管理
+    pypi即:python packages index
+    官方战点:https://pypi.org
+    通过pip命令可以直接在线安装,但是连接的是国外服务器,速度较慢
+    使用国内镜像站点[root@room8pc16 ~]# mkdir ~/.pip/
+    [root@room8pc16 ~]# vim ~/.pip/pip.conf
+    [global]
+    index-url = http://mirrors.163.com/pypi/simple/
+    [install]
+    trusted-host=mirrors.163.com
+
+7.markdown 编辑器:typora : https://www.typora.io/
+
+8.python官方手册: https://docs.python.org/zh-cn/3/
+  内建函数:https://docs.python.org/zh-cn/3/library/functions.html
+  python官方站点:http://www.python.org
+
+9.张志刚老师简书
+    https://www.jianshu.com/c/00c61372c46a
+
+10.将vim打造成Python编辑器
+    https://www.jianshu.com/p/29e7847f7298
+
+
+
+
+
+
+
+
+
+
+
+
