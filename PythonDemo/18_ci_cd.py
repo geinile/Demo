@@ -59,24 +59,28 @@ def deploy(app_fname, web_root):
     os.symlink(app_dir, web_root)
 
 if __name__ == '__main__':
+    #/var/www/deploy/   保存livever和解压的软件包
+    #/var/www/links/    保存指向某一个版本的链接
+    #/var/www/download/ 保存下载的软件包
+
     # 判断是否有新版本，没有的话退出
-    ver_url = 'http://192.168.4.7/deploy/livever'
-    ver_fname = '/var/www/deploy/livever'
+    ver_url = 'http://192.168.4.7/deploy/livever'   #网上版本
+    ver_fname = '/var/www/deploy/livever'           #本地版本
     if not has_new_ver(ver_url, ver_fname):
         print('未发现新版本。')
         exit(1)
 
     # 下载软件
     r = requests.get(ver_url)
-    version = r.text.strip()
-    app_url = 'http://192.168.4.7/deploy/packages/myweb-%s.tar.gz' % version
-    download_dir = '/var/www/download'
-    wget.download(app_url, download_dir)
+    version = r.text.strip()        #去除空格
+    app_url = 'http://192.168.4.7/deploy/packages/myweb-%s.tar.gz' % version    #下载相对于的版本
+    download_dir = '/var/www/download'  #下载到的目录
+    wget.download(app_url, download_dir)    #
 
     # 检查压缩包是否损坏
-    app_fname = app_url.split('/')[-1]
-    app_fname = os.path.join(download_dir, app_fname)
-    app_md5_url = app_url + '.md5'
+    app_fname = app_url.split('/')[-1]      #myweb-1.0.tar.gz
+    app_fname = os.path.join(download_dir, app_fname)   #/var/www/download/myweb-1.0.tar.gz
+    app_md5_url = app_url + '.md5'  #192.168.4.7/deploy/packages/myweb-1.0.tar.gz.md5
     if not check_app(app_fname, app_md5_url):
         print('压缩包已损坏')
         os.remove(app_fname)  # 删除损坏的压缩包
