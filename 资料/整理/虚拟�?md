@@ -1,0 +1,32 @@
+# 虚拟化
+
+- 虚拟化主要厂商及作品
+
+  | 系列      | PC/服务器版代表             |
+  | --------- | --------------------------- |
+  | VMware    | VMware Workstation、vSphere |
+  | Microsoft | VirtualPC、Hyper-V          |
+  | Redhat    | KVM、RHEV                   |
+  | Citrix    | Xen                         |
+  | Oracle    | Oracle VM VirtualBox        |
+
+## 安装虚拟化服务器平台
+
+KVM / QEMU / LIBVIRT
+
+- KVM是Linux内核的模块，它需要CPU的支持，采用硬件辅助虚拟化技术Inter-VT， AMD-V，内存相关的如Inter的EPT和AMD的RVI技术
+
+- QEMU是一个虚拟化仿真工具，通过ioctl与内核kvm交互完成对硬件的虚拟化支持
+
+- Libvirt是一个对虚拟化管理的接口和工具，提供用户端程序virsh, virsh-install, virsh-manager,virt-vier与用户交互
+
+  ### 必备软件
+
+  - qumu-kvm
+    - 为kvm提供底层放着支持
+  - libvirt-daemon
+    - libvirtd守护进程，管理虚拟机
+  - libvirt-client
+    - 用户端软件，提供客户端管理命令
+  - libvirt-daemon-driver-qemu
+    - libvirtd连接qemu的驱动
