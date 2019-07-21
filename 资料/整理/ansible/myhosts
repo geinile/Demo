@@ -1,0 +1,40 @@
+[ceph]
+192.168.1.11
+192.168.1.12
+192.168.1.13
+[web]
+192.168.1.22
+192.168.1.23
+192.168.1.24
+192.168.1.25
+192.168.1.26
+192.168.1.27
+[dong]
+192.168.1.22
+192.168.1.23
+192.168.1.24
+192.168.1.25
+[jing]
+192.168.1.26
+192.168.1.27
+[mem]
+192.168.1.28
+192.168.1.29
+[nfs]
+192.168.1.38
+192.168.1.39
+[db]
+192.168.1.51 ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass=123qqq...A
+192.168.1.52 ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass=123qqq...A
+192.168.1.53 ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass=123qqq...A
+192.168.1.54 ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass=123qqq...A
+192.168.1.55 ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass=123qqq...A
+192.168.1.56 ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass=123qqq...A
+192.168.1.57 ansible_ssh_user=root ansible_ssh_port=22 ansible_ssh_pass=123qqq...A
+
+
+
+
+
+
+

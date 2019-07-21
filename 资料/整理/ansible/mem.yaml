@@ -1,0 +1,10 @@
+---
+- hosts: dong
+  remote_user: root
+  tasks:
+  - copy:
+      src: www.conf
+      dest: /etc/php-fpm.d/www.conf
+      owner: root 
+      group: root 
+      mode: 0644

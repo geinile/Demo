@@ -1,0 +1,14 @@
+[mon]
+name=ceph_mon
+baseurl=ftp://192.168.1.202/ceph/MON
+gpgcheck=0
+
+[osd]
+name=ceph_osd
+baseurl=ftp://192.168.1.202/ceph/OSD
+gpgcheck=0
+
+[tools]
+name=ceph_tools
+baseurl=ftp://192.168.1.202/ceph/Tools
+gpgcheck=0

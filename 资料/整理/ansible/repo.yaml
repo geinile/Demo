@@ -1,0 +1,10 @@
+---
+- hosts: ceph
+  remote_user: root
+  tasks:
+  - copy:
+      src: ceph.repo
+      dest: /etc/yum.repos.d/ceph.repo
+      owner: root 
+      group: root 
+      mode: 0644

@@ -1,0 +1,13 @@
+---
+- hosts: web
+  remote_user: root
+  tasks:
+  - name: copy the nginx repo
+    copy: 
+     src: nginx.repo
+     dest: /etc/yum.repos.d/nginx.repo
+     owner: root
+     group: root
+     mode: 0644
+
+

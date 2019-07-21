@@ -1,0 +1,5 @@
+[nginx]
+name=nginx-1.12.1
+baseurl=ftp://192.168.1.202/nginx
+enabled=1
+gpgcheck=0

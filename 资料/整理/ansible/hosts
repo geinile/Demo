@@ -1,0 +1,8 @@
+::1	localhost	localhost.localdomain	localhost6	localhost6.localdomain6
+127.0.0.1	localhost	localhost.localdomain	localhost4	localhost4.localdomain4
+127.0.0.1	ecs-jump	ecs-jump
+
+192.168.1.10 client
+192.168.1.11 ceph_node01
+192.168.1.12 ceph_node02
+192.168.1.13 ceph_node03
